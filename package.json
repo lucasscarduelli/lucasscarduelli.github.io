@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "lucasscarduelli.github.io",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Página pessoal de Lucas Boeing Scarduelli",
+  "repository": "https://github.com/lucasscarduelli/lucasscarduelli.github.io.git",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
