@@ -1,3 +1,3 @@
 www.scarduelli.com
 
-Página pessoal de Lucas Boeing Scarduelli
+Página pessoal  de Lucas Boeing Scarduelli
