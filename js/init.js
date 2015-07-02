@@ -1,15 +1,22 @@
-'use strict';
+var app = angular.module('app', ['ngRoute', 'ngResource']);
 
-var app = angular.module('app', []);
+app.config(function($routeProvider) {
 
-// Declare app level module which depends on views, and components
-angular.module('app', [
-  'ngRoute',
-  'app.quem-sou-eu',
-  'app.blog',
-  'app.contato'
-]).
+	$routeProvider.when("/quem-sou-eu", {
+		controller: "QuemSouEuCtrl",
+		templateUrl: "/quem-sou-eu/quem-sou-eu.html"
+	});
 
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/quem-sou-eu'});
-}]);
+	$routeProvider.when("/blog", {
+		controller: "BlogCtrl",
+		templateUrl: "/blog/blog.html"
+	});
+
+	$routeProvider.when("/contato", {
+		controller: "ContatoCtrl",
+		templateUrl: "/contato/contato.html"
+	});
+
+	$routeProvider.otherwise({redirectTo: "/quem-sou-eu"});
+
+});
